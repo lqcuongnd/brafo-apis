@@ -15,10 +15,6 @@
     "description": {
       "type": "string"
     },
-    "organization": {
-      "via": "rooms",
-      "model": "organization"
-    },
     "info": {
       "type": "json"
     }

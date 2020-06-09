@@ -67,10 +67,6 @@
       "plugin": "upload",
       "required": false
     },
-    "organization": {
-      "via": "users",
-      "model": "organization"
-    },
     "phoneNumber": {
       "type": "string"
     },

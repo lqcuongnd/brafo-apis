@@ -29,10 +29,6 @@
       "plugin": "upload",
       "required": false
     },
-    "organization": {
-      "model": "organization",
-      "via": "reports"
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",

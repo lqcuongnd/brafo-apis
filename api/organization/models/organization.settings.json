@@ -34,16 +34,10 @@
     },
     "users": {
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "organization"
+      "collection": "user"
     },
     "rooms": {
-      "collection": "room",
-      "via": "organization"
-    },
-    "reports": {
-      "via": "organization",
-      "collection": "report"
+      "collection": "room"
     }
   }
 }
