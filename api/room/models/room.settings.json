@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "room"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "organization": {
+      "via": "rooms",
+      "model": "organization"
+    },
+    "info": {
+      "type": "json"
+    }
+  }
+}

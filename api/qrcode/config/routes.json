@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/qrcodes",
+      "handler": "qrcode.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/qrcodes/count",
+      "handler": "qrcode.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/qrcodes/:id",
+      "handler": "qrcode.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/qrcodes",
+      "handler": "qrcode.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/qrcodes/:id",
+      "handler": "qrcode.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/qrcodes/:id",
+      "handler": "qrcode.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

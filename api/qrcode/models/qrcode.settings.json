@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qrcodes",
+  "info": {
+    "name": "qrcode"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "qrcode": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "json"
+    }
+  }
+}

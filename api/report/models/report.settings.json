@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "name": "report"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "organization": {
+      "model": "organization",
+      "via": "reports"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "report"
+    },
+    "organizationId": {
+      "type": "integer"
+    },
+    "userName": {
+      "type": "string"
+    }
+  }
+}
