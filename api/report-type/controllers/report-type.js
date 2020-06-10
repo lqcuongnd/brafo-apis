@@ -5,15 +5,4 @@
  * to customize this controller
  */
 
-module.exports = {
-
-    findByUser : () => {
-
-        return 1;
-    },
-
-    findOneByUser : () => {
-
-        return 1;
-    }
-};
+module.exports = {};

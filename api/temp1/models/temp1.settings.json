@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "areas",
+  "collectionName": "temp1_s",
   "info": {
-    "name": "area"
+    "name": "temp1"
   },
   "options": {
     "increments": true,
@@ -11,9 +11,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "description": {
-      "type": "text"
     }
   }
 }

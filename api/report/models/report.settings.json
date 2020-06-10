@@ -26,30 +26,18 @@
       "plugin": "upload",
       "required": false
     },
-    "organizationId": {
-      "type": "integer"
-    },
-    "userName": {
-      "type": "string"
-    },
     "roomId": {
       "type": "string"
-    },
-    "room": {
-      "model": "room",
-      "via": "reports"
     },
     "priority": {
       "type": "integer"
     },
-    "organization": {
-      "model": "organization",
-      "via": "reports"
-    },
     "user": {
-      "via": "reports",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

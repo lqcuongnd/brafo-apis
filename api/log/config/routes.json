@@ -25,6 +25,22 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/logs/getlogsbyuser",
+      "handler": "log.findByUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/logs/getlogbyuser",
+      "handler": "log.findOneByUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/logs",
       "handler": "log.create",

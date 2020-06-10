@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "qrcodes",
   "info": {
-    "name": "qrcode"
+    "name": "barcode"
   },
   "options": {
     "increments": true,

@@ -70,10 +70,6 @@
     "phoneNumber": {
       "type": "string"
     },
-    "reports": {
-      "collection": "report",
-      "via": "user"
-    },
     "organizationId": {
       "type": "integer"
     }

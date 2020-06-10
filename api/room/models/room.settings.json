@@ -18,9 +18,8 @@
     "info": {
       "type": "json"
     },
-    "reports": {
-      "via": "room",
-      "collection": "report"
+    "orgId": {
+      "type": "string"
     }
   }
 }

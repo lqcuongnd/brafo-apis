@@ -31,14 +31,6 @@
     },
     "type": {
       "type": "string"
-    },
-    "areas": {
-      "via": "organization",
-      "collection": "area"
-    },
-    "reports": {
-      "via": "organization",
-      "collection": "report"
     }
   }
 }

@@ -1,19 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "areas",
+  "collectionName": "temp2_s",
   "info": {
-    "name": "area"
+    "name": "temp2"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "code": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "temp_1": {
+      "model": "temp1"
     }
   }
 }
