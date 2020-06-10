@@ -70,9 +70,12 @@
     "phoneNumber": {
       "type": "string"
     },
-    "report": {
-      "via": "user",
-      "model": "report"
+    "reports": {
+      "collection": "report",
+      "via": "user"
+    },
+    "organizationId": {
+      "type": "integer"
     }
   }
 }

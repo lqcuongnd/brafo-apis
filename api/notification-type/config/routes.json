@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/notification-types",
+      "handler": "notification-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notification-types/count",
+      "handler": "notification-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notification-types/:id",
+      "handler": "notification-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/notification-types",
+      "handler": "notification-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/notification-types/:id",
+      "handler": "notification-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/notification-types/:id",
+      "handler": "notification-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

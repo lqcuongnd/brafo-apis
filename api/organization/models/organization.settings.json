@@ -12,11 +12,8 @@
     "name": {
       "type": "string"
     },
-    "status": {
-      "type": "string"
-    },
     "avatar": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,12 +29,16 @@
     "comfirmed": {
       "type": "boolean"
     },
-    "users": {
-      "plugin": "users-permissions",
-      "collection": "user"
+    "type": {
+      "type": "string"
     },
-    "rooms": {
-      "collection": "room"
+    "areas": {
+      "via": "organization",
+      "collection": "area"
+    },
+    "reports": {
+      "via": "organization",
+      "collection": "report"
     }
   }
 }

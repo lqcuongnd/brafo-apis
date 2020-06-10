@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "rooms",
+  "collectionName": "areas",
   "info": {
-    "name": "room"
+    "name": "area"
   },
   "options": {
     "increments": true,
@@ -13,14 +13,11 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
-    "info": {
-      "type": "json"
-    },
-    "reports": {
-      "via": "room",
-      "collection": "report"
+    "organization": {
+      "model": "organization",
+      "via": "areas"
     }
   }
 }

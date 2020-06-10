@@ -15,9 +15,6 @@
     "detail": {
       "type": "text"
     },
-    "status": {
-      "type": "string"
-    },
     "files": {
       "collection": "file",
       "via": "related",
@@ -29,16 +26,30 @@
       "plugin": "upload",
       "required": false
     },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "report"
-    },
     "organizationId": {
       "type": "integer"
     },
     "userName": {
       "type": "string"
+    },
+    "roomId": {
+      "type": "string"
+    },
+    "room": {
+      "model": "room",
+      "via": "reports"
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "organization": {
+      "model": "organization",
+      "via": "reports"
+    },
+    "user": {
+      "via": "reports",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

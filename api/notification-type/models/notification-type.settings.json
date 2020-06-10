@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "rooms",
+  "collectionName": "notification_types",
   "info": {
-    "name": "room"
+    "name": "notificationType"
   },
   "options": {
     "increments": true,
@@ -12,15 +12,11 @@
     "name": {
       "type": "string"
     },
-    "description": {
+    "title": {
       "type": "string"
     },
-    "info": {
-      "type": "json"
-    },
-    "reports": {
-      "via": "room",
-      "collection": "report"
+    "description": {
+      "type": "string"
     }
   }
 }
