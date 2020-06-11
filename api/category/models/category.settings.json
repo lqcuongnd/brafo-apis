@@ -1,22 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "notification_types",
+  "collectionName": "categories",
   "info": {
-    "name": "notificationType"
+    "name": "category"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
+    "group": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
     },
-    "title": {
-      "type": "string"
-    },
     "description": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

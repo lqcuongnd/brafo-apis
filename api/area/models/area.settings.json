@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "areas",
   "info": {
-    "name": "area"
+    "name": "organ"
   },
   "options": {
     "increments": true,
@@ -13,7 +13,10 @@
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "json"
+    },
+    "organization": {
+      "model": "organization"
     }
   }
 }

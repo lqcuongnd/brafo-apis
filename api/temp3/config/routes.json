@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/report-types",
-      "handler": "report-type.find",
+      "path": "/temp-3-s",
+      "handler": "temp3.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/report-types/count",
-      "handler": "report-type.count",
+      "path": "/temp-3-s/count",
+      "handler": "temp3.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/report-types/:id",
-      "handler": "report-type.findOne",
+      "path": "/temp-3-s/:id",
+      "handler": "temp3.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/report-types",
-      "handler": "report-type.create",
+      "path": "/temp-3-s",
+      "handler": "temp3.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/report-types/:id",
-      "handler": "report-type.update",
+      "path": "/temp-3-s/:id",
+      "handler": "temp3.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/report-types/:id",
-      "handler": "report-type.delete",
+      "path": "/temp-3-s/:id",
+      "handler": "temp3.delete",
       "config": {
         "policies": []
       }

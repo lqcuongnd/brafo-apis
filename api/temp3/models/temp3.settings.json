@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "report_types",
+  "collectionName": "temp3_s",
   "info": {
-    "name": "reportType"
+    "name": "temp3"
   },
   "options": {
     "increments": true,
@@ -11,6 +11,9 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "temp_2": {
+      "model": "temp2"
     }
   }
 }
