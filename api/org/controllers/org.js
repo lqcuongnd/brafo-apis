@@ -28,7 +28,7 @@ module.exports = {
               model: strapi.models.org,
             });
             // if (org.chef && org.chef.email) {
-            //   delete org.avatar;
+              delete org.avatar;
             // }
             return org;
           });
