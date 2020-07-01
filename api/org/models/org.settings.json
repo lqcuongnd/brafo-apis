@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "orgs",
   "info": {
-    "name": "org"
+    "name": "Org"
   },
   "options": {
     "increments": true,
@@ -12,8 +12,14 @@
     "name": {
       "type": "string"
     },
+    "type": {
+      "type": "string"
+    },
+    "info": {
+      "type": "json"
+    },
     "avatar": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -23,14 +29,8 @@
       "plugin": "upload",
       "required": false
     },
-    "info": {
-      "type": "json"
-    },
-    "comfirmed": {
+    "confirmed": {
       "type": "boolean"
-    },
-    "type": {
-      "type": "string"
     }
   }
 }
