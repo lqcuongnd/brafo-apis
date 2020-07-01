@@ -9,11 +9,11 @@
     "timestamps": true
   },
   "attributes": {
-    "qrcode": {
+    "code": {
       "type": "string"
     },
-    "detail": {
-      "type": "json"
+    "content": {
+      "type": "string"
     }
   }
 }
