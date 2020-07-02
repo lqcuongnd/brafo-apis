@@ -9,6 +9,9 @@
     "timestamps": true
   },
   "attributes": {
+    "orgId": {
+      "type": "string"
+    },
     "group": {
       "type": "string"
     },
