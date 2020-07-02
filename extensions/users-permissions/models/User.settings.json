@@ -75,6 +75,9 @@
     },
     "department": {
       "type": "string"
+    },
+    "info": {
+      "type": "json"
     }
   }
 }

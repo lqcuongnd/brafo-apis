@@ -1317,6 +1317,9 @@
           },
           "department": {
             "type": "string"
+          },
+          "info": {
+            "type": "object"
           }
         }
       },
@@ -1366,6 +1369,9 @@
           },
           "department": {
             "type": "string"
+          },
+          "info": {
+            "type": "object"
           }
         }
       }

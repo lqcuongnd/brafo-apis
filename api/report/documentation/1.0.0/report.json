@@ -582,6 +582,9 @@
               },
               "department": {
                 "type": "string"
+              },
+              "info": {
+                "type": "object"
               }
             }
           },
