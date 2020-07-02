@@ -22,10 +22,10 @@
       "collection": "object",
       "via": "room"
     },
-    "org": {
-      "model": "org"
-    },
     "area": {
+      "type": "string"
+    },
+    "orgId": {
       "type": "string"
     }
   }

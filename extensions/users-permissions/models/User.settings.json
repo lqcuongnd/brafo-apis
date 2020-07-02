@@ -53,7 +53,7 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "staffId": {
+    "fullname": {
       "type": "string"
     },
     "avatar": {
@@ -70,8 +70,11 @@
     "phoneNumber": {
       "type": "string"
     },
-    "organizationId": {
-      "type": "integer"
+    "orgId": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
     }
   }
 }

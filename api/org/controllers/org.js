@@ -12,7 +12,7 @@ module.exports = {
     /**
      * get allOrg
      */
-    async find(ctx) {
+    find: async ctx => {
         const orgServices = strapi.services.org;
         const { _populate } = ctx.query;
         
@@ -25,10 +25,35 @@ module.exports = {
               model: strapi.models.org,
             });
             // if (org.chef && org.chef.email) {
-              delete org.avatar;
+             delete org.avatar;
             // }
             return org;
           });
       
       },
+
+      findOne: async ctx => {
+
+        const orgServices = strapi.services.org;
+        const { _populate } = ctx.query;
+        const { id } = ctx.params;
+    
+        let org = await orgServices.findOne(this.params);
+        // org.avatar = null;
+        
+        return org;
+      },
+
+      findOneNonAvatar: async ctx => {
+
+        const orgServices = strapi.services.org
+        const { _populate } = ctx.query
+        const { id } = ctx.params
+        let org = await orgServices.findOne(this.params)
+
+        org.avatar = null
+        
+        return org;
+      },
+    
 };
