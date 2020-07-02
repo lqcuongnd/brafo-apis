@@ -12,10 +12,7 @@
     "group": {
       "type": "string"
     },
-    "name": {
-      "type": "string"
-    },
-    "description": {
+    "list": {
       "type": "text"
     }
   }

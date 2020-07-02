@@ -18,7 +18,14 @@
     "info": {
       "type": "json"
     },
-    "orgId": {
+    "objects": {
+      "collection": "object",
+      "via": "room"
+    },
+    "org": {
+      "model": "org"
+    },
+    "area": {
       "type": "string"
     }
   }

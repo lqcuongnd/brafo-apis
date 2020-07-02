@@ -9,8 +9,11 @@
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "group": {
       "type": "string"
+    },
+    "list": {
+      "type": "text"
     }
   }
 }

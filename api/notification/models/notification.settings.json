@@ -8,5 +8,15 @@
     "increments": true,
     "timestamps": true
   },
-  "attributes": {}
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
 }

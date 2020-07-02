@@ -15,10 +15,7 @@ module.exports = {
     async find(ctx) {
         const orgServices = strapi.services.org;
         const { _populate } = ctx.query;
-        const limitNumber = 50;
-        const _limit = ctx.query._limit >= limitNumber
-          ? limitNumber
-          : ctx.query._limit || limitNumber;
+        
         const query = _.omit(ctx.query, ["_populate"]);
     
         const entities = await orgServices.find({ ...query }, _populate);
