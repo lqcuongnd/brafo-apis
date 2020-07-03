@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "orgs",
+  "collectionName": "shared_avatars",
   "info": {
-    "name": "Org"
+    "name": "shared-avatar"
   },
   "options": {
     "increments": true,
@@ -11,12 +11,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
-    "info": {
-      "type": "json"
     },
     "avatar": {
       "model": "file",
@@ -28,9 +22,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "confirmed": {
-      "type": "boolean"
     }
   }
 }
