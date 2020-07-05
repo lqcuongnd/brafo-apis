@@ -654,6 +654,9 @@
                 }
               }
             }
+          },
+          "status": {
+            "type": "string"
           }
         }
       },
@@ -675,6 +678,9 @@
             "type": "string"
           },
           "type": {
+            "type": "string"
+          },
+          "status": {
             "type": "string"
           }
         }

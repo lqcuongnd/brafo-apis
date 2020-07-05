@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "obj_of_rooms",
+  "info": {
+    "name": "obj_of_room"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "yearOfUse": {
+      "type": "integer"
+    },
+    "accountingUnit": {
+      "type": "string"
+    },
+    "accountingQuantity": {
+      "type": "float"
+    },
+    "inventoryUnit": {
+      "type": "string"
+    },
+    "inventoryQuantity": {
+      "type": "float"
+    },
+    "quality": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "poor",
+        "loss"
+      ]
+    },
+    "note": {
+      "type": "text"
+    },
+    "history": {
+      "type": "text"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/rooms": {
+    "/obj-of-rooms": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Room"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Room"
+          "Obj-of-room"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Room"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Room"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewRoom"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/rooms/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Room"
+          "Obj-of-room"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewObj-of-room"
+              }
+            }
+          }
+        }
       }
     },
-    "/rooms/{id}": {
+    "/obj-of-rooms/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Room"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Room"
+          "Obj-of-room"
+        ],
+        "parameters": []
+      }
+    },
+    "/obj-of-rooms/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Obj-of-room"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Room"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Room"
+          "Obj-of-room"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRoom"
+                "$ref": "#/components/schemas/NewObj-of-room"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Room"
+          "Obj-of-room"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Room": {
+      "Obj-of-room": {
         "required": [
           "id"
         ],
@@ -525,87 +538,80 @@
           "name": {
             "type": "string"
           },
-          "description": {
+          "code": {
             "type": "string"
           },
-          "info": {
-            "type": "object"
+          "yearOfUse": {
+            "type": "integer"
           },
-          "objects": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "org": {
-                  "type": "string"
-                },
-                "area": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "status": {
-                  "type": "string"
-                },
-                "room": {
-                  "type": "string"
-                },
-                "info": {
-                  "type": "object"
-                },
-                "type": {
-                  "type": "string"
-                },
-                "history": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "area": {
+          "accountingUnit": {
             "type": "string"
           },
-          "orgId": {
+          "accountingQuantity": {
+            "type": "number"
+          },
+          "inventoryUnit": {
+            "type": "string"
+          },
+          "inventoryQuantity": {
+            "type": "number"
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "good",
+              "poor",
+              "loss"
+            ]
+          },
+          "note": {
+            "type": "string"
+          },
+          "history": {
             "type": "string"
           }
         }
       },
-      "NewRoom": {
+      "NewObj-of-room": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "description": {
+          "code": {
             "type": "string"
           },
-          "info": {
-            "type": "object"
+          "yearOfUse": {
+            "type": "integer"
           },
-          "objects": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "area": {
+          "accountingUnit": {
             "type": "string"
           },
-          "orgId": {
+          "accountingQuantity": {
+            "type": "number"
+          },
+          "inventoryUnit": {
+            "type": "string"
+          },
+          "inventoryQuantity": {
+            "type": "number"
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "good",
+              "poor",
+              "loss"
+            ]
+          },
+          "note": {
+            "type": "string"
+          },
+          "history": {
             "type": "string"
           }
         }
       }
     }
   },
-  "tags": [
-    {
-      "name": "Room"
-    }
-  ]
+  "tags": []
 }

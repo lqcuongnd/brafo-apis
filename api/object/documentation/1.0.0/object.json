@@ -592,6 +592,9 @@
           },
           "type": {
             "type": "string"
+          },
+          "history": {
+            "type": "string"
           }
         }
       },
@@ -616,6 +619,9 @@
             "type": "object"
           },
           "type": {
+            "type": "string"
+          },
+          "history": {
             "type": "string"
           }
         }

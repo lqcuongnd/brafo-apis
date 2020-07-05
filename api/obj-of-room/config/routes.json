@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/obj-of-rooms",
+      "handler": "obj-of-room.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-of-rooms/count",
+      "handler": "obj-of-room.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-of-rooms/:id",
+      "handler": "obj-of-room.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/obj-of-rooms",
+      "handler": "obj-of-room.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/obj-of-rooms/:id",
+      "handler": "obj-of-room.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/obj-of-rooms/:id",
+      "handler": "obj-of-room.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

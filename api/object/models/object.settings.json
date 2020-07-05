@@ -22,14 +22,17 @@
       "type": "string"
     },
     "room": {
-      "via": "objects",
-      "model": "room"
+      "model": "room",
+      "via": "objects"
     },
     "info": {
       "type": "json"
     },
     "type": {
       "type": "string"
+    },
+    "history": {
+      "type": "text"
     }
   }
 }
