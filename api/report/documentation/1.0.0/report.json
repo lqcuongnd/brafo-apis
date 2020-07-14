@@ -582,6 +582,9 @@
               },
               "info": {
                 "type": "object"
+              },
+              "isMale": {
+                "type": "boolean"
               }
             }
           },

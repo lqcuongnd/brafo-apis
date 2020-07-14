@@ -1317,6 +1317,9 @@
           },
           "info": {
             "type": "object"
+          },
+          "isMale": {
+            "type": "boolean"
           }
         }
       },
@@ -1366,6 +1369,9 @@
           },
           "info": {
             "type": "object"
+          },
+          "isMale": {
+            "type": "boolean"
           }
         }
       }
