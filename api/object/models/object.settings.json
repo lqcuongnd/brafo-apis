@@ -9,9 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "org": {
-      "model": "org"
-    },
     "area": {
       "type": "string"
     },
@@ -22,8 +19,8 @@
       "type": "string"
     },
     "room": {
-      "model": "room",
-      "via": "objects"
+      "via": "objects",
+      "model": "room"
     },
     "info": {
       "type": "json"

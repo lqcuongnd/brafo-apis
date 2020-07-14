@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "qrcodes",
+  "collectionName": "barcodes",
   "info": {
     "name": "barcode"
   },

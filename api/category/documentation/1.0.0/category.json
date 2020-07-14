@@ -522,9 +522,6 @@
           "id": {
             "type": "string"
           },
-          "orgId": {
-            "type": "string"
-          },
           "group": {
             "type": "string"
           },
@@ -535,9 +532,6 @@
       },
       "NewCategory": {
         "properties": {
-          "orgId": {
-            "type": "string"
-          },
           "group": {
             "type": "string"
           },

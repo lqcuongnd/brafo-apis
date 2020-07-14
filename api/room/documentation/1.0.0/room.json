@@ -541,9 +541,6 @@
                 "id": {
                   "type": "string"
                 },
-                "org": {
-                  "type": "string"
-                },
                 "area": {
                   "type": "string"
                 },
@@ -570,9 +567,6 @@
           },
           "area": {
             "type": "string"
-          },
-          "orgId": {
-            "type": "string"
           }
         }
       },
@@ -594,9 +588,6 @@
             }
           },
           "area": {
-            "type": "string"
-          },
-          "orgId": {
             "type": "string"
           }
         }

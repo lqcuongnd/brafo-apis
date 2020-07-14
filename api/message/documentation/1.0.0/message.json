@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/objects": {
+    "/messages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Object"
+                    "$ref": "#/components/schemas/Message"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Object"
+                  "$ref": "#/components/schemas/Message"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewObject"
+                "$ref": "#/components/schemas/NewMessage"
               }
             }
           }
         }
       }
     },
-    "/objects/count": {
+    "/messages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "parameters": []
       }
     },
-    "/objects/{id}": {
+    "/messages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Object"
+                  "$ref": "#/components/schemas/Message"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Object"
+                  "$ref": "#/components/schemas/Message"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewObject"
+                "$ref": "#/components/schemas/NewMessage"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Object"
+          "Message"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Object": {
+      "Message": {
         "required": [
           "id"
         ],
@@ -522,75 +522,26 @@
           "id": {
             "type": "string"
           },
-          "area": {
+          "content": {
             "type": "string"
           },
-          "name": {
+          "sender": {
             "type": "string"
           },
-          "status": {
-            "type": "string"
-          },
-          "room": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              },
-              "objects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "area": {
-                "type": "string"
-              }
-            }
-          },
-          "info": {
-            "type": "object"
-          },
-          "type": {
-            "type": "string"
-          },
-          "history": {
+          "receiver": {
             "type": "string"
           }
         }
       },
-      "NewObject": {
+      "NewMessage": {
         "properties": {
-          "area": {
+          "content": {
             "type": "string"
           },
-          "name": {
+          "sender": {
             "type": "string"
           },
-          "status": {
-            "type": "string"
-          },
-          "room": {
-            "type": "string"
-          },
-          "info": {
-            "type": "object"
-          },
-          "type": {
-            "type": "string"
-          },
-          "history": {
+          "receiver": {
             "type": "string"
           }
         }
@@ -599,7 +550,7 @@
   },
   "tags": [
     {
-      "name": "Object"
+      "name": "Message"
     }
   ]
 }

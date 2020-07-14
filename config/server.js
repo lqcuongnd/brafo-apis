@@ -1,4 +1,4 @@
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 2902),
+  port: env.int('PORT', 1996),
 });

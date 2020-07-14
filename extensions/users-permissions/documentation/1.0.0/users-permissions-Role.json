@@ -618,9 +618,6 @@
                 "phoneNumber": {
                   "type": "string"
                 },
-                "orgId": {
-                  "type": "string"
-                },
                 "department": {
                   "type": "string"
                 },

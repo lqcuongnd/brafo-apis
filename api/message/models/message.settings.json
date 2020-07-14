@@ -1,19 +1,22 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "messages",
   "info": {
-    "name": "category"
+    "name": "message"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "group": {
+    "content": {
+      "type": "text"
+    },
+    "sender": {
       "type": "string"
     },
-    "list": {
-      "type": "text"
+    "receiver": {
+      "type": "string"
     }
   }
 }
