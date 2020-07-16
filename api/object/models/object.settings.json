@@ -9,10 +9,10 @@
     "timestamps": true
   },
   "attributes": {
-    "area": {
+    "name": {
       "type": "string"
     },
-    "name": {
+    "area": {
       "type": "string"
     },
     "status": {
