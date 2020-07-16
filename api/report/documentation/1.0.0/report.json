@@ -726,10 +726,10 @@
               "id": {
                 "type": "string"
               },
-              "area": {
+              "name": {
                 "type": "string"
               },
-              "name": {
+              "area": {
                 "type": "string"
               },
               "status": {
