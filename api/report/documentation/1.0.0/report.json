@@ -528,7 +528,7 @@
           "detail": {
             "type": "string"
           },
-          "roomId": {
+          "room": {
             "type": "string"
           },
           "priority": {
@@ -668,7 +668,7 @@
           "detail": {
             "type": "string"
           },
-          "roomId": {
+          "room": {
             "type": "string"
           },
           "priority": {
