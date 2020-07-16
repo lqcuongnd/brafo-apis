@@ -45,6 +45,9 @@
     },
     "report_type": {
       "model": "obj-type"
+    },
+    "object": {
+      "model": "object"
     }
   }
 }

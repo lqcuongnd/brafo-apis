@@ -607,6 +607,9 @@
                 },
                 "report_type": {
                   "type": "string"
+                },
+                "object": {
+                  "type": "string"
                 }
               }
             }
