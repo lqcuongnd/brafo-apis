@@ -574,11 +574,21 @@
           "info": {
             "type": "object"
           },
-          "type": {
-            "type": "string"
-          },
           "history": {
             "type": "string"
+          },
+          "obj_type": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -599,10 +609,10 @@
           "info": {
             "type": "object"
           },
-          "type": {
+          "history": {
             "type": "string"
           },
-          "history": {
+          "obj_type": {
             "type": "string"
           }
         }

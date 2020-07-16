@@ -556,10 +556,10 @@
                 "info": {
                   "type": "object"
                 },
-                "type": {
+                "history": {
                   "type": "string"
                 },
-                "history": {
+                "obj_type": {
                   "type": "string"
                 }
               }

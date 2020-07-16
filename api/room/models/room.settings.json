@@ -19,8 +19,8 @@
       "type": "json"
     },
     "objects": {
-      "collection": "object",
-      "via": "room"
+      "via": "room",
+      "collection": "object"
     },
     "area": {
       "type": "string"
