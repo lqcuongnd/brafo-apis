@@ -590,16 +590,59 @@
                 "user": {
                   "type": "string"
                 },
-                "type": {
-                  "type": "string"
-                },
                 "medias": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "status": {
+                "room": {
+                  "type": "string"
+                },
+                "report_status": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "report_type": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "obj_of_rooms": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "yearOfUse": {
+                  "type": "integer"
+                },
+                "accountingQuantity": {
+                  "type": "number"
+                },
+                "inventoryQuantity": {
+                  "type": "number"
+                },
+                "quality": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                },
+                "history": {
                   "type": "string"
                 },
                 "room": {
@@ -631,6 +674,12 @@
             "type": "string"
           },
           "reports": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "obj_of_rooms": {
             "type": "array",
             "items": {
               "type": "string"

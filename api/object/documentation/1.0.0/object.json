@@ -562,6 +562,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "obj_of_rooms": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },

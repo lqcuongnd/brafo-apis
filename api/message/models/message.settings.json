@@ -13,10 +13,12 @@
       "type": "text"
     },
     "sender": {
-      "type": "string"
+      "plugin": "users-permissions",
+      "model": "user"
     },
     "receiver": {
-      "type": "string"
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

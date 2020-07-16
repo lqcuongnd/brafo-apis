@@ -2,39 +2,15 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/orgs",
+      "path": "/org",
       "handler": "org.find",
       "config": {
         "policies": []
       }
     },
     {
-      "method": "GET",
-      "path": "/orgs/count",
-      "handler": "org.count",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/orgs/:id",
-      "handler": "org.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/orgs",
-      "handler": "org.create",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "PUT",
-      "path": "/orgs/:id",
+      "path": "/org",
       "handler": "org.update",
       "config": {
         "policies": []
@@ -42,7 +18,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/orgs/:id",
+      "path": "/org",
       "handler": "org.delete",
       "config": {
         "policies": []

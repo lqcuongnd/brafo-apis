@@ -585,9 +585,6 @@
               }
             }
           },
-          "type": {
-            "type": "string"
-          },
           "medias": {
             "type": "array",
             "items": {
@@ -652,9 +649,6 @@
               }
             }
           },
-          "status": {
-            "type": "string"
-          },
           "room": {
             "required": [
               "id"
@@ -686,6 +680,41 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "obj_of_rooms": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "report_status": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "report_type": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
               }
             }
           }
@@ -705,13 +734,16 @@
           "user": {
             "type": "string"
           },
-          "type": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string"
-          },
           "room": {
+            "type": "string"
+          },
+          "report_status": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "report_type": {
             "type": "string"
           }
         }

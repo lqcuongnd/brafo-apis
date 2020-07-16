@@ -22,9 +22,6 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "type": {
-      "type": "string"
-    },
     "medias": {
       "collection": "file",
       "via": "related",
@@ -36,12 +33,18 @@
       "plugin": "upload",
       "required": false
     },
-    "status": {
-      "type": "string"
-    },
     "room": {
       "model": "room",
       "via": "reports"
+    },
+    "report_status": {
+      "model": "report-status"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "report_type": {
+      "model": "obj-type"
     }
   }
 }

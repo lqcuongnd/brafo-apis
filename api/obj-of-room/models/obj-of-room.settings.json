@@ -18,14 +18,8 @@
     "yearOfUse": {
       "type": "integer"
     },
-    "accountingUnit": {
-      "type": "string"
-    },
     "accountingQuantity": {
       "type": "float"
-    },
-    "inventoryUnit": {
-      "type": "string"
     },
     "inventoryQuantity": {
       "type": "float"
@@ -43,6 +37,10 @@
     },
     "history": {
       "type": "text"
+    },
+    "room": {
+      "model": "room",
+      "via": "obj_of_rooms"
     }
   }
 }

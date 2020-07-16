@@ -28,6 +28,10 @@
     "reports": {
       "via": "room",
       "collection": "report"
+    },
+    "obj_of_rooms": {
+      "via": "room",
+      "collection": "obj-of-room"
     }
   }
 }

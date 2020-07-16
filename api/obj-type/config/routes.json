@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/obj-types",
+      "handler": "obj-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-types/count",
+      "handler": "obj-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-types/:id",
+      "handler": "obj-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/obj-types",
+      "handler": "obj-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/obj-types/:id",
+      "handler": "obj-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/obj-types/:id",
+      "handler": "obj-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

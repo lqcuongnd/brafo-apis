@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/obj-of-rooms": {
+    "/report-statuses": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewObj-of-room"
+                "$ref": "#/components/schemas/NewReport-status"
               }
             }
           }
         }
       }
     },
-    "/obj-of-rooms/count": {
+    "/report-statuses/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "parameters": []
       }
     },
-    "/obj-of-rooms/{id}": {
+    "/report-statuses/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewObj-of-room"
+                "$ref": "#/components/schemas/NewReport-status"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Obj-of-room"
+          "Report-status"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Obj-of-room": {
+      "Report-status": {
         "required": [
           "id"
         ],
@@ -537,107 +537,12 @@
           },
           "name": {
             "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "yearOfUse": {
-            "type": "integer"
-          },
-          "accountingQuantity": {
-            "type": "number"
-          },
-          "inventoryQuantity": {
-            "type": "number"
-          },
-          "quality": {
-            "type": "string",
-            "enum": [
-              "good",
-              "poor",
-              "loss"
-            ]
-          },
-          "note": {
-            "type": "string"
-          },
-          "history": {
-            "type": "string"
-          },
-          "room": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              },
-              "objects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "area": {
-                "type": "string"
-              },
-              "reports": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "obj_of_rooms": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
-      "NewObj-of-room": {
+      "NewReport-status": {
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "yearOfUse": {
-            "type": "integer"
-          },
-          "accountingQuantity": {
-            "type": "number"
-          },
-          "inventoryQuantity": {
-            "type": "number"
-          },
-          "quality": {
-            "type": "string",
-            "enum": [
-              "good",
-              "poor",
-              "loss"
-            ]
-          },
-          "note": {
-            "type": "string"
-          },
-          "history": {
-            "type": "string"
-          },
-          "room": {
             "type": "string"
           }
         }
