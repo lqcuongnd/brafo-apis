@@ -25,9 +25,9 @@
     "area": {
       "type": "string"
     },
-    "report": {
+    "reports": {
       "via": "room",
-      "model": "report"
+      "collection": "report"
     }
   }
 }

@@ -41,7 +41,7 @@
     },
     "room": {
       "model": "room",
-      "via": "report"
+      "via": "reports"
     }
   }
 }
