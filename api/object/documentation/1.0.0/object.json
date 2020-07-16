@@ -556,6 +556,9 @@
               },
               "area": {
                 "type": "string"
+              },
+              "report": {
+                "type": "string"
               }
             }
           },

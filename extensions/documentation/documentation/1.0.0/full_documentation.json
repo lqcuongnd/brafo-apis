@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/16/2020 3:21:35 PM"
+    "x-generation-date": "07/16/2020 4:10:18 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7682,6 +7682,9 @@
               },
               "area": {
                 "type": "string"
+              },
+              "report": {
+                "type": "string"
               }
             }
           },
@@ -7860,9 +7863,6 @@
           "detail": {
             "type": "string"
           },
-          "room": {
-            "type": "string"
-          },
           "priority": {
             "type": "integer"
           },
@@ -7989,6 +7989,37 @@
           },
           "status": {
             "type": "string"
+          },
+          "room": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "info": {
+                "type": "object"
+              },
+              "objects": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "area": {
+                "type": "string"
+              },
+              "report": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -7998,9 +8029,6 @@
             "type": "string"
           },
           "detail": {
-            "type": "string"
-          },
-          "room": {
             "type": "string"
           },
           "priority": {
@@ -8013,6 +8041,9 @@
             "type": "string"
           },
           "status": {
+            "type": "string"
+          },
+          "room": {
             "type": "string"
           }
         }
@@ -8070,6 +8101,43 @@
           },
           "area": {
             "type": "string"
+          },
+          "report": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              },
+              "user": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "medias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "status": {
+                "type": "string"
+              },
+              "room": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -8091,6 +8159,9 @@
             }
           },
           "area": {
+            "type": "string"
+          },
+          "report": {
             "type": "string"
           }
         }

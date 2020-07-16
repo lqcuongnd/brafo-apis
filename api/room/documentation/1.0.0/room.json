@@ -567,6 +567,43 @@
           },
           "area": {
             "type": "string"
+          },
+          "report": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              },
+              "user": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "medias": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "status": {
+                "type": "string"
+              },
+              "room": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -588,6 +625,9 @@
             }
           },
           "area": {
+            "type": "string"
+          },
+          "report": {
             "type": "string"
           }
         }

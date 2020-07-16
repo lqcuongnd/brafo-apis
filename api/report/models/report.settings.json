@@ -15,9 +15,6 @@
     "detail": {
       "type": "text"
     },
-    "room": {
-      "type": "string"
-    },
     "priority": {
       "type": "integer"
     },
@@ -41,6 +38,10 @@
     },
     "status": {
       "type": "string"
+    },
+    "room": {
+      "model": "room",
+      "via": "report"
     }
   }
 }
