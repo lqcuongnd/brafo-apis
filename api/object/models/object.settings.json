@@ -15,21 +15,20 @@
     "area": {
       "type": "string"
     },
-    "status": {
-      "type": "string"
+    "obj_status": {
+      "model": "obj-status"
     },
     "room": {
-      "model": "room",
-      "via": "objects"
+      "model": "room"
+    },
+    "obj_type": {
+      "model": "obj-type"
     },
     "info": {
       "type": "json"
     },
     "history": {
       "type": "text"
-    },
-    "obj_type": {
-      "model": "obj-type"
     }
   }
 }

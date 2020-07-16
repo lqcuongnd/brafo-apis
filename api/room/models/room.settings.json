@@ -18,10 +18,6 @@
     "info": {
       "type": "json"
     },
-    "objects": {
-      "via": "room",
-      "collection": "object"
-    },
     "area": {
       "type": "string"
     },

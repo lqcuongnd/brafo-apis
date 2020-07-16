@@ -528,8 +528,18 @@
           "area": {
             "type": "string"
           },
-          "status": {
-            "type": "string"
+          "obj_status": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           },
           "room": {
             "required": [
@@ -548,12 +558,6 @@
               "info": {
                 "type": "object"
               },
-              "objects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "area": {
                 "type": "string"
               },
@@ -571,12 +575,6 @@
               }
             }
           },
-          "info": {
-            "type": "object"
-          },
-          "history": {
-            "type": "string"
-          },
           "obj_type": {
             "required": [
               "id"
@@ -589,6 +587,12 @@
                 "type": "string"
               }
             }
+          },
+          "info": {
+            "type": "object"
+          },
+          "history": {
+            "type": "string"
           }
         }
       },
@@ -600,19 +604,19 @@
           "area": {
             "type": "string"
           },
-          "status": {
+          "obj_status": {
             "type": "string"
           },
           "room": {
+            "type": "string"
+          },
+          "obj_type": {
             "type": "string"
           },
           "info": {
             "type": "object"
           },
           "history": {
-            "type": "string"
-          },
-          "obj_type": {
             "type": "string"
           }
         }

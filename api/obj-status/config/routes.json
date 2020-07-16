@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/obj-statuses",
+      "handler": "obj-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-statuses/count",
+      "handler": "obj-status.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obj-statuses/:id",
+      "handler": "obj-status.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/obj-statuses",
+      "handler": "obj-status.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/obj-statuses/:id",
+      "handler": "obj-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/obj-statuses/:id",
+      "handler": "obj-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -581,12 +581,6 @@
               "info": {
                 "type": "object"
               },
-              "objects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "area": {
                 "type": "string"
               },

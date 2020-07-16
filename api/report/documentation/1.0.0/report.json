@@ -666,12 +666,6 @@
               "info": {
                 "type": "object"
               },
-              "objects": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "area": {
                 "type": "string"
               },
@@ -717,37 +711,6 @@
                 "type": "string"
               }
             }
-          },
-          "object": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "area": {
-                "type": "string"
-              },
-              "status": {
-                "type": "string"
-              },
-              "room": {
-                "type": "string"
-              },
-              "info": {
-                "type": "object"
-              },
-              "history": {
-                "type": "string"
-              },
-              "obj_type": {
-                "type": "string"
-              }
-            }
           }
         }
       },
@@ -775,9 +738,6 @@
             "type": "string"
           },
           "report_type": {
-            "type": "string"
-          },
-          "object": {
             "type": "string"
           }
         }
