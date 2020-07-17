@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "db_statuses",
+  "info": {
+    "name": "db_status"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "is_changed": {
+      "type": "boolean"
+    }
+  }
+}
