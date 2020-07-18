@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/reports_small",
+      "handler": "report.findSmall",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/reports",
       "handler": "report.create",
